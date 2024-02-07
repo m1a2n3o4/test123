@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row; */
+             align-items: center;  
+            /* align-items:flex-end;  */
+            /* align-items: flex-start; */
+            /* align-items: flex-start; */
+            /* justify-content: space-between; */
+            /* Add More div it will work */
+            height: 500px;
+        } 
+
+        .item {
+            background: #444;
+            border: solid 2px gray;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            width: 300px;
+        }
+     
+         .item-1 {
+            align-self: flex-start;
+         }
+         .item-3 {
+            align-self: flex-end;
+         }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Deisplay : Flex - Replace for floats.
+                    it makes Child items flex horizontally.
+        flex-direction : row/coloumsn/row-reverse/coloum-reverse.
+        flex-wrap : wrap.
+    -->
+
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3s</h3>
+        </div>
+    </div>
+</body>
+</html>
